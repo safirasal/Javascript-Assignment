@@ -19,13 +19,31 @@ let totalBelanja = 0
 let Beras = 0 
 let Gula = 0
 let Telur = 0
-let Minyak Goreng = 0
+let minyakGoreng = 0
 let barang = [
     { nama: "Beras" , harga: 10000, jumlah: 5 },
     { nama: "Gula" , harga: 14000, jumlah: 5 },
     { nama: "Telur" , harga: 20000, jumlah: 2 },
     { nama: "Minyak Goreng" , harga: 9000, jumlah: 10 }
 ]
-
-let harga
+for (let i = 0; i < barang.length; i++) {
+    totalBelanja += barang[i].harga * barang[i].jumlah
+}
+for (let i = 0; i < barang.length; i++) {
+    Beras = barang[0].harga * barang[0].jumlah
+}
+for (let i = 0; i < barang.length; i++) {
+    Gula = barang[1].harga * barang[1].jumlah
+}
+for (let i = 0; i < barang.length; i++) {
+    Telur = barang[2].harga * barang[2].jumlah
+}
+for (let i = 0; i < barang.length; i++) {
+    minyakGoreng  = barang[3].harga * barang[3].jumlah
+}
+console.log(`Beras = ${Beras}`);
+console.log(`Gula = ${Gula}`);
+console.log(`Telur = ${Telur}`);
+console.log(`Minyak Goreng = ${minyakGoreng}`);
+console.log(`Total belanja = ${totalBelanja}`);
 
